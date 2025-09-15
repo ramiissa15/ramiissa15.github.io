@@ -3,8 +3,9 @@ body {
 }
 
 canvas {
-  background-color: lightblue;
-  margin: 20px;
+  background-image: url("images/LsuStadium.jpg");
+  background-size: cover;
+  margin: 0px;
 }
 
 img {

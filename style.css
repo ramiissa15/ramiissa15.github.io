@@ -94,10 +94,10 @@ h2, h3 {
 }
 
 #portfolio li:hover {
-  background: #eee;
+  background: #f5f5f5;
 }
 
 #portfolio a {
   text-decoration: none;
-  color: #454545;
+  color: #010101;
 }
