@@ -8,8 +8,10 @@
       .box {
         width: 70px;
         height: 70px;
-        background-color: teal;
+        background-image: url("https://www.wilson.com/en-us/media/catalog/product/article_images/WTF1661XB_/WTF1661XB__32144f0c56ed2a46944e15f0acde68a6.png");
+        background-size: cover;
         font-size: 300%;
+        color: white;
         text-align: center;
         user-select: none;
         display: block;
@@ -21,6 +23,8 @@
 
       .board {
         height: 100vh;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdyL82ZW5S4D8C5B9xkgh2gRVvGTO45SeGtw2x6FQeRW_xsS-d:https://www.omnibron.com/cdn/shop/products/LSUFootballField_815a2032-b023-4ea0-bac5-cb5b525ad896_1024x1024%402x.jpg%3Fv%3D1692134995&s");
+        background-size: cover;
       }
     </style>
     <!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
@@ -69,9 +73,11 @@
         //////////////////////////////////////////////////////////////////
 
         // TODO 2 - Variable declarations
-
-
-
+var positionX = 0;
+var points = 0;
+var speed = 10;
+var positionY;
+var speedY;
 
 
         /**
@@ -80,10 +86,18 @@
          * If the box drifts off the screen, turn it around!
          */
         function update() {
-
-        
-
-          
+moveBoxTo(positionX); 
+  positionX = positionX + speed; 
+if (positionX >= boardWidth) {
+speed *= -1;
+}
+else if (positionX <= 0) {
+speed *= -1;
+}        
+function moveBoxTo(newPositionX, newPositionY) {
+  box.css("left", newPositionX);
+  box.css("top", newPositionY);
+}
         }
 
         /**
@@ -94,8 +108,11 @@
          * - move the box to the left side of the screen.
          */
         function handleBoxClick() {
-
-
+positionX = 0;
+changeBoxText(points);
+points++; 
+speed += 4; 
+speed = 4* points + 10;
 
 
         }
@@ -104,5 +121,8 @@
         
       })();
     </script>
-  </body>
+  </body> {
+    
+  }
+
 </html>
