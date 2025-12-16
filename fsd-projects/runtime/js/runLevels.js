@@ -25,7 +25,7 @@ function createSawBlade(x,y){
   sawBladeHitZone.x = x;
   sawBladeHitZone.y = y;
   game.addGameItem(sawBladeHitZone);
-  var obstacle = draw.bitmap("img/sawblade.png")
+  var obstacleImage = draw.bitmap("img/sawblade.png")
   sawBladeHitZone.addChild(obstacleImage);
   obstacle.x = -25
   obstacle.y = -22
