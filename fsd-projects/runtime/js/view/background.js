@@ -31,8 +31,8 @@ var background = function (window) {
         // TODO (several):
       var tree 
       var buildings = []
-      var buildingHeight
-      
+   
+
     
       
         // called at the start of game and whenever the page is resized
@@ -61,8 +61,8 @@ background.addChild(circle);
             
             // TODO 4: Part 1 - Add buildings!     Q: This is before TODO 4 for a reason! Why?
            for (var i = 0; i < 5; ++i) {
-  var buildingHeight = 300;
-  var building = draw.rect(75, buildingHeight, "LightGray", "Black", 1);
+  var buildingHeight = 275;
+  var building = draw.rect(50, buildingHeight, "LightGray", "Black", 2);
   building.x = 200 * i;
   building.y = groundY - buildingHeight;
   background.addChild(building);
@@ -92,11 +92,11 @@ background.addChild(tree);
 }
             
             // TODO 4: Part 2 - Parallax
-            for (var i = 0; i < myArray.length; i++) {
-  var eachElement = myArray[i];
-
-  // code to do something with each element
+           for (var i = 0; i < myArray.length; i++) {
+    var eachElement = myArray[i];
 }
+ 
+
 
         } // end of update function - DO NOT DELETE
         
