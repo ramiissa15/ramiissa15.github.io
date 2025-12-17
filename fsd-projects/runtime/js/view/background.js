@@ -92,8 +92,8 @@ background.addChild(tree);
 }
             
             // TODO 4: Part 2 - Parallax
-           for (var i = 0; i < myArray.length; i++) {
-    var eachElement = myArray[i];
+           for (var i = 0; i < buildings.length; i++) {
+    var eachElement = buildings[i];
 }
  
 
