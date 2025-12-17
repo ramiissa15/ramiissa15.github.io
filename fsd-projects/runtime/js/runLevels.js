@@ -53,7 +53,7 @@ var runLevels = function (window) {
       };
       enemy.onProjectileCollision = function () {
         game.increaseScore(100);
-        enemyfadeOut();
+        enemyFadeOut();
       };
     }
     createEnemy(400, groundY - 20);
@@ -64,7 +64,7 @@ var runLevels = function (window) {
       var circle = draw.rect(50, 50, "blue");
       circle.x = -25;
       circle.y = -25;
-      reward.addchild(circle);
+      reward.addChild(circle);
       reward.x = x;
       reward.y = y;
       game.addGameItem(reward);
