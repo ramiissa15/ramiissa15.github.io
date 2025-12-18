@@ -67,8 +67,8 @@ var background = function (window) {
       }
       // TODO 3: Part 1 - Add a tree
       tree = draw.bitmap("img/tree.png");
-      tree.x = 0;
-      tree.y = groundY - tree.height;
+      tree.x = 500;
+      tree.y = 100;
       background.addChild(tree);
     } // end of render function - DO NOT DELETE
 
